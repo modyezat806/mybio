@@ -1,40 +1,101 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Ezzat - Personal Website</title>
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>صفحتي الشخصية</title>
     <style>
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: url('https://i.imgur.com/VFKGqlb.jpeg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
             padding: 0;
         }
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.6);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            animation: fadeIn 1s ease-in-out;
+        .container {
+            text-align: center;
+            width: 300px;
         }
-        img {
+        .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 3px solid white;
-            margin-top: 20px;
-            transition: transform 0.3s ease;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
-        img:hover {
-            transform: scale(1.1) rotate(3deg);
+        .name {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .social-box {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .social-box:hover {
+            transform: translateY(-5px);
+        }
+        .social-box a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .social-box img {
+            width: 24px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- استبدل profile.jpg بمسار صورتك -->
+        <img src="profile.jpg" alt="صورتي الشخصية" class="profile-img">
+        
+        <div class="name">اسمك هنا</div>
+        
+        <!-- مربعات روابط التواصل -->
+        <div class="social-box">
+            <a href="رابط_الفيسبوك" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="فيسبوك">
+                Facebook
+            </a>
+        </div>
+        
+        <div class="social-box">
+            <a href="رابط_تويتر" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="تويتر">
+                Twitter
+            </a>
+        </div>
+        
+        <div class="social-box">
+            <a href="رابط_لينكدإن" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="لينكدإن">
+                LinkedIn
+            </a>
+        </div>
+        
+        <div class="social-box">
+            <a href="رابط_إنستجرام" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="إنستجرام">
+                Instagram
+            </a>
+        </div>
+    </div>
+</body>
+</html>            transform: scale(1.1) rotate(3deg);
         }
         h1 {
             margin-top: 15px;
